@@ -1,2 +1,2 @@
 print("Hello world!")
-print("Egor")
+print("Egor QQ_ss")
