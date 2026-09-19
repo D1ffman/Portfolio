@@ -6,10 +6,10 @@ response = requests.get(url)
 data = response.json()
 
 
-for i in range(5):
-    print("userId:", data[i]["userId"])
-    print("Id:", data[i]["id"])
-    print("title:", data[i]["title"])
-    print("completed:", data[i]["completed"])
- 
+for task in data[:5]:
+    print("userId:", task["userId"])
+    print("Id:", task["id"])
+    print("title:", task["title"])
+    print("completed:", task["completed"])
+    print()
   

@@ -1,6 +1,6 @@
 import requests
 
-url = " "
+url = "https://api.open-meteo.com/v1/forecast"
 
 params = {
     "Ширина": 55.75, 
@@ -11,5 +11,5 @@ params = {
 response = requests.get(url, params=params)
 
 print(response.status_code)
-print(response.json())
-
+print(response.text)
+print("Ответ API:", response.json())
