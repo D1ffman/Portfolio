@@ -75,8 +75,7 @@ while True:
 
             найдено = 0
 
-            print("Найдено:", len(поиск), "задач с вашим запросом.")
-            print()
+            
             for task in data:
                 if поиск.lower() in task["title"].lower():
                     print("Номер:", task["id"])
